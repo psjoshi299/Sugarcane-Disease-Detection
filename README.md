@@ -27,6 +27,8 @@ streamlit run app.py
 
 
 
-Download the model from here: https://drive.google.com/drive/folders/1siPKe3pmQdBkYxD42_8-qlL19Qh1XSHV?usp=sharing
+
+
+Download the model.h5 file from here: https://drive.google.com/drive/folders/1siPKe3pmQdBkYxD42_8-qlL19Qh1XSHV?usp=sharing
 
 
