@@ -8,13 +8,13 @@ import gdown
 from utils import clean_image, get_prediction, make_results
 
 # Define the Google Drive URL of the model.h5 file
-# google_drive_url = "https://drive.google.com/file/d/1bRYiAO1raPYfByZSi1Ai68VJ5D351oJD/view?usp=sharing"
+google_drive_url = "https://drive.google.com/file/d/1bRYiAO1raPYfByZSi1Ai68VJ5D351oJD/view?usp=sharing"
 
 # Define the local file path where you want to save the downloaded model.h5 file
-# local_model_path = "model.h5"
+local_model_path = "model.h5"
 
 # Download the model.h5 file from Google Drive
-# gdown.download(google_drive_url, local_model_path, quiet=False)
+gdown.download(google_drive_url, local_model_path, quiet=False)
 
 # Loading the Model and saving to cache
 @st.cache(allow_output_mutation=True)
@@ -62,7 +62,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 # Loading the Model
-model = load_model('https://drive.google.com/file/d/1bRYiAO1raPYfByZSi1Ai68VJ5D351oJD/view?usp=sharing')
+model = load_model('model.h5')
 
 # Title and Description
 st.title('Created by Department of Computer Engineering (Sanjivani College of Engineering)')
