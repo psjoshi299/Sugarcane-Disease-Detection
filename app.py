@@ -4,6 +4,7 @@ from PIL import Image
 import io
 import numpy as np
 import tensorflow as tf
+import gdown 
 from utils import clean_image, get_prediction, make_results
 
 # Define the Google Drive URL of the model.h5 file
