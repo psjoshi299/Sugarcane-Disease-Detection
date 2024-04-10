@@ -7,7 +7,7 @@ import tensorflow as tf
 from utils import clean_image, get_prediction, make_results
 
 # Define the local file path where your model.h5 file is stored
-local_model_path = "C:\Users\prathamesh\Downloads\Sugarcane Disease Detection\model.h5"
+local_model_path = r"C:\Users\prathamesh\Downloads\Sugarcane Disease Detection\model.h5"
 
 # Loading the Model and saving to cache
 @st.cache(allow_output_mutation=True)
