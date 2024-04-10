@@ -8,7 +8,7 @@ import gdown
 from utils import clean_image, get_prediction, make_results
 
 # Define the Google Drive URL of the model.h5 file
-google_drive_url = "https://drive.google.com/drive/folders/1siPKe3pmQdBkYxD42_8-qlL19Qh1XSHV?usp=sharing"
+google_drive_url = "https://drive.google.com/file/d/1bRYiAO1raPYfByZSi1Ai68VJ5D351oJD/view?usp=sharing"
 
 # Define the local file path where you want to save the downloaded model.h5 file
 local_model_path = "model.h5"
