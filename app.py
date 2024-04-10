@@ -6,8 +6,14 @@ import numpy as np
 import tensorflow as tf
 from utils import clean_image, get_prediction, make_results
 
-# Define the local file path where your model.h5 file is stored
-local_model_path = r"C:\Users\prathamesh\Downloads\Sugarcane Disease Detection\model.h5"
+# Define the Google Drive URL of the model.h5 file
+google_drive_url = "https://drive.google.com/drive/folders/1siPKe3pmQdBkYxD42_8-qlL19Qh1XSHV?usp=sharing"
+
+# Define the local file path where you want to save the downloaded model.h5 file
+local_model_path = "model.h5"
+
+# Download the model.h5 file from Google Drive
+gdown.download(google_drive_url, local_model_path, quiet=False)
 
 # Loading the Model and saving to cache
 @st.cache(allow_output_mutation=True)
