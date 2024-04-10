@@ -92,8 +92,7 @@ stack-data==0.6.3
 statsmodels==0.14.1
 streamlit==1.33.0
 tenacity==8.2.3
-tensorboard==2.1.1
-tensorflow==2.9.3
+tensorflow==2.16.1
 tensorflow-estimator==2.0.0
 termcolor==1.1.0
 terminado==0.8.3
