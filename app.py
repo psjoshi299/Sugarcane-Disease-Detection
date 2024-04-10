@@ -45,7 +45,7 @@ def load_model(path):
     return model
 
 # Download the model.h5 file from GitHub release
-release_url = 'https://github.com/username/repo/releases/download/v1.0/model.h5'
+release_url = 'https://github.com/psjoshi299/Sugarcane-Disease-Detection/releases/download/v1.0.0/model.h5'
 local_model_path = 'model.h5'
 response = requests.get(release_url)
 with open(local_model_path, 'wb') as f:
