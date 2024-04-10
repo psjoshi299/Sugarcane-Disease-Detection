@@ -6,6 +6,9 @@ import numpy as np
 import tensorflow as tf
 from utils import clean_image, get_prediction, make_results
 
+# Define the local file path where your model.h5 file is stored
+local_model_path = "C:\Users\prathamesh\Downloads\Sugarcane Disease Detection\model.h5"
+
 # Loading the Model and saving to cache
 @st.cache(allow_output_mutation=True)
 def load_model(path):
@@ -52,7 +55,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 # Loading the Model
-model = load_model('model.h5')
+model = load_model(local_model_path)
 
 # Title and Description
 st.title('Created by Department of Computer Engineering (Sanjivani College of Engineering)')
